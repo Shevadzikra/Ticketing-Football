@@ -70,14 +70,14 @@ $revenue = $pdo->query("SELECT SUM(total_amount) FROM orders")->fetchColumn();
                     </div>
                 </div>
                 
-                <div class="bg-white p-6 rounded-lg shadow">
+                <div class="bg-white p-6 rounded-lg shadow w-60">
                     <div class="flex items-center">
                         <div class="p-3 rounded-full bg-purple-100 text-purple-600">
                             <i class="fas fa-money-bill-wave text-xl"></i>
                         </div>
                         <div class="ml-4">
                             <p class="text-gray-500">Total Pendapatan</p>
-                            <h3 class="text-2xl font-bold">Rp <?= number_format($revenue, 0, ',', '.') ?></h3>
+                            <h3 class="text-2xl font-bold w-52">Rp <?= number_format($revenue, 0, ',', '.') ?></h3>
                         </div>
                     </div>
                 </div>

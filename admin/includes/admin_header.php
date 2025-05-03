@@ -43,7 +43,7 @@
                     </a>
                 </div>
                 <div class="px-4 py-2 mt-6">
-                    <a href="../logout.php" class="block py-2 px-4 rounded hover:bg-red-600 text-white">
+                    <a href="./logout.php" class="block py-2 px-4 rounded hover:bg-red-600 text-white">
                         <i class="fas fa-sign-out-alt mr-2"></i> Logout
                     </a>
                 </div>
