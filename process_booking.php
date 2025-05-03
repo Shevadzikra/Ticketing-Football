@@ -59,7 +59,7 @@ try {
             ?, 
             NOW(), 
             ?, 
-            'pending', 
+            'completed', 
             ?,
             ?,
             ?,

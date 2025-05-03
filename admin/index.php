@@ -46,7 +46,7 @@ $revenue = $pdo->query("SELECT SUM(total_amount) FROM orders")->fetchColumn();
                     </div>
                 </div>
                 
-                <div class="bg-white p-6 rounded-lg shadow">
+                <!-- <div class="bg-white p-6 rounded-lg shadow">
                     <div class="flex items-center">
                         <div class="p-3 rounded-full bg-green-100 text-green-600">
                             <i class="fas fa-ticket-alt text-xl"></i>
@@ -56,7 +56,7 @@ $revenue = $pdo->query("SELECT SUM(total_amount) FROM orders")->fetchColumn();
                             <h3 class="text-2xl font-bold"><?= $tickets_count ?></h3>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 
                 <div class="bg-white p-6 rounded-lg shadow">
                     <div class="flex items-center">
@@ -87,7 +87,7 @@ $revenue = $pdo->query("SELECT SUM(total_amount) FROM orders")->fetchColumn();
             <div class="bg-white p-6 rounded-lg shadow">
                 <div class="flex justify-between items-center mb-4">
                     <h2 class="text-xl font-bold">Pesanan Terbaru</h2>
-                    <a href="orders.php" class="text-blue-500 hover:underline">Lihat Semua</a>
+                    <a href="./orders/" class="text-blue-500 hover:underline">Lihat Semua</a>
                 </div>
                 <div class="overflow-x-auto">
                     <table class="min-w-full">

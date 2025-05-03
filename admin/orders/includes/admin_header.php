@@ -33,7 +33,7 @@
                     </a>
                 </div>
                 <div class="px-4 py-2">
-                    <a href="../orders/" class="block py-2 px-4 rounded hover:bg-blue-700 text-white">
+                    <a href="./" class="block py-2 px-4 rounded hover:bg-blue-700 text-white">
                         <i class="fas fa-receipt mr-2"></i> Pesanan
                     </a>
                 </div>
