@@ -97,7 +97,6 @@ $revenue = $pdo->query("SELECT SUM(total_amount) FROM orders")->fetchColumn();
                                 <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Nama</th>
                                 <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Tanggal</th>
                                 <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Total</th>
-                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
                             </tr>
                         </thead>
                         <tbody class="bg-white divide-y divide-gray-200">
@@ -117,13 +116,6 @@ $revenue = $pdo->query("SELECT SUM(total_amount) FROM orders")->fetchColumn();
                                 <td class="px-6 py-4 whitespace-nowrap"><?= htmlspecialchars($order['customer_name']) ?></td>
                                 <td class="px-6 py-4 whitespace-nowrap"><?= $order_date->format('d M Y H:i') ?></td>
                                 <td class="px-6 py-4 whitespace-nowrap">Rp <?= number_format($order['total_amount'], 0, ',', '.') ?></td>
-                                <td class="px-6 py-4 whitespace-nowrap">
-                                    <span class="px-2 py-1 text-xs rounded-full 
-                                        <?= $order['status'] === 'paid' ? 'bg-green-100 text-green-800' : 
-                                           ($order['status'] === 'pending' ? 'bg-yellow-100 text-yellow-800' : 'bg-red-100 text-red-800') ?>">
-                                        <?= ucfirst($order['status']) ?>
-                                    </span>
-                                </td>
                             </tr>
                             <?php endforeach; ?>
                         </tbody>

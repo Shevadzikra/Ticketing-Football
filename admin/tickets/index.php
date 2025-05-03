@@ -52,10 +52,10 @@ $tickets = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     <p class="text-gray-600 mb-1">Pertandingan ID: <?php echo $ticket['match_id']; ?></p>
                     <p class="text-gray-600 mb-1">Harga: Rp<?php echo number_format($ticket['price'], 0, ',', '.'); ?></p>
                     <p class="text-gray-600 mb-3">
-                        Tersedia: <?php echo $ticket['actual_available']; ?> / <?php echo $ticket['quantity_available']; ?>
+                        Tersedia: <?php echo $ticket['actual_available']; ?> Tiket
+                        <!-- / <?php echo $ticket['quantity_available']; ?> -->
                     </p>
                     <p class="text-gray-700 mb-4"><?php echo htmlspecialchars($ticket['description']); ?></p>
-                    
                     <div class="flex space-x-2">
                         <a href="edit_ticket.php?id=<?php echo $ticket['id']; ?>" 
                            class="bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600 text-sm">

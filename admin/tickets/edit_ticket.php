@@ -9,7 +9,7 @@ if (!isset($_SESSION['user_id']) || !$_SESSION['is_admin']) {
 }
 
 if (!isset($_GET['id'])) {
-    header("Location: tickets.php");
+    header("Location: ../seats/");
     exit();
 }
 
@@ -21,7 +21,7 @@ $stmt->execute([$ticket_id]);
 $ticket = $stmt->fetch(PDO::FETCH_ASSOC);
 
 if (!$ticket) {
-    header("Location: tickets.php");
+    header("Location: ../seats/");
     exit();
 }
 
@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $stmt->execute([$ticket_type, $price, $description, $ticket_id]);
         
         $_SESSION['success'] = "Tiket berhasil diperbarui";
-        header("Location: tickets.php");
+        header("Location: ../seats/");
         exit();
     } catch (PDOException $e) {
         $error = "Gagal memperbarui tiket: " . $e->getMessage();
@@ -68,14 +68,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                        value="<?php echo htmlspecialchars($ticket['ticket_type']); ?>"
                        class="w-full px-3 py-2 border rounded-lg">
             </div>
-            
             <div class="mb-4">
                 <label class="block text-gray-700 mb-2" for="price">Harga</label>
                 <input type="number" step="0.01" id="price" name="price" required 
                        value="<?php echo $ticket['price']; ?>"
                        class="w-full px-3 py-2 border rounded-lg">
             </div>
-            
             <div class="mb-4">
                 <label class="block text-gray-700 mb-2" for="description">Deskripsi</label>
                 <textarea id="description" name="description" 

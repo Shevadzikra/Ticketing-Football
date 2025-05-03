@@ -18,12 +18,12 @@
             </div>
             <nav class="mt-6">
                 <div class="px-4 py-2">
-                    <a href="..index.php" class="block py-2 px-4 rounded bg-blue-700 text-white">
+                    <a href="../" class="block py-2 px-4 rounded hover:bg-blue-700 text-white">
                         <i class="fas fa-tachometer-alt mr-2"></i> Dashboard
                     </a>
                 </div>
                 <div class="px-4 py-2">
-                    <a href="../matches.php" class="block py-2 px-4 rounded hover:bg-blue-700 text-white">
+                    <a href="../matches/" class="block py-2 px-4 rounded hover:bg-blue-700 text-white">
                         <i class="fas fa-calendar-alt mr-2"></i> Pertandingan
                     </a>
                 </div>

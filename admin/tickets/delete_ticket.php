@@ -9,7 +9,7 @@ if (!isset($_SESSION['user_id']) || !$_SESSION['is_admin']) {
 }
 
 if (!isset($_GET['id'])) {
-    header("Location: tickets.php");
+    header("Location: ./");
     exit();
 }
 
@@ -25,6 +25,6 @@ try {
     $_SESSION['error'] = "Gagal menghapus tiket: " . $e->getMessage();
 }
 
-header("Location: tickets.php");
+header("Location: ./");
 exit();
 ?>

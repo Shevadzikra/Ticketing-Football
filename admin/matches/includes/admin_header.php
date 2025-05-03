@@ -18,27 +18,27 @@
             </div>
             <nav class="mt-6">
                 <div class="px-4 py-2">
-                    <a href="index.php" class="block py-2 px-4 rounded hover:bg-blue-700 text-white">
+                    <a href="../" class="block py-2 px-4 rounded hover:bg-blue-700 text-white">
                         <i class="fas fa-tachometer-alt mr-2"></i> Dashboard
                     </a>
                 </div>
                 <div class="px-4 py-2">
-                    <a href="matches/" class="block py-2 px-4 rounded hover:bg-blue-700 text-white">
+                    <a href="./" class="block py-2 px-4 rounded hover:bg-blue-700 text-white">
                         <i class="fas fa-calendar-alt mr-2"></i> Pertandingan
                     </a>
                 </div>
                 <div class="px-4 py-2">
-                    <a href="tickets/" class="block py-2 px-4 rounded hover:bg-blue-700 text-white">
+                    <a href="../tickets/" class="block py-2 px-4 rounded hover:bg-blue-700 text-white">
                         <i class="fas fa-ticket-alt mr-2"></i> Tiket
                     </a>
                 </div>
                 <div class="px-4 py-2">
-                    <a href="orders.php" class="block py-2 px-4 rounded hover:bg-blue-700 text-white">
+                    <a href="../orders.php" class="block py-2 px-4 rounded hover:bg-blue-700 text-white">
                         <i class="fas fa-receipt mr-2"></i> Pesanan
                     </a>
                 </div>
                 <div class="px-4 py-2">
-                    <a href="users.php" class="block py-2 px-4 rounded hover:bg-blue-700 text-white">
+                    <a href="../users.php" class="block py-2 px-4 rounded hover:bg-blue-700 text-white">
                         <i class="fas fa-users mr-2"></i> Pengguna
                     </a>
                 </div>
