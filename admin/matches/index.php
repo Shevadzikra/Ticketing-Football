@@ -213,10 +213,13 @@ $completed_matches = $pdo->query("
                                 $match_date = new DateTime($match['match_date']);
                                 $now = new DateTime();
                                 $is_past = $match_date < $now;
+
+                                $nama_pertandingan = htmlspecialchars($match['team_home']) ." vs " . htmlspecialchars($match['team_away']);
                             ?>
+                            
                             <tr class="<?= $is_past ? 'bg-yellow-50' : '' ?>">
                                 <td class="px-6 py-4 whitespace-nowrap">
-                                    <div class="font-bold"><?= htmlspecialchars($match['team_home']) ?> vs <?= htmlspecialchars($match['team_away']) ?></div>
+                                    <div class="font-bold"><?= $nama_pertandingan ?></div>
                                     <div class="text-sm text-gray-500"><?= htmlspecialchars($match['description']) ?></div>
                                 </td>
                                 <td class="px-6 py-4 whitespace-nowrap">
@@ -250,7 +253,7 @@ $completed_matches = $pdo->query("
                                        onclick="return confirm('Tandai pertandingan ini sebagai selesai?')">
                                         <i class="fas fa-check"></i>
                                     </a>
-                                    <a href="../seats/create_seat.php?match_id=<?= $match['id'] ?>" 
+                                    <a href="../seats/create_seat.php?match_id=<?= $match['id'] ?>&np= <?= $nama_pertandingan ?>" 
                                         class="text-purple-600 hover:text-purple-900 ml-3"
                                         title="Kelola Kursi">
                                             <i class="fas fa-chair"></i> Kelola Kursi

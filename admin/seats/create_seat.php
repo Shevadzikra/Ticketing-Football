@@ -14,6 +14,7 @@ if (!isset($_GET['match_id'])) {
 }
 
 $match_id = $_GET['match_id'];
+$nama_pertandingan = $_GET['np'];
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     try {
@@ -98,7 +99,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div class="mb-4">
                 <label class="block text-gray-700 mb-2" for="ticket_type">Nama Tiket/Tipe</label>
                 <input type="text" id="ticket_type" name="ticket_type" required
-                        class="w-full px-3 py-2 border rounded-lg" placeholder="Contoh: VIP, Reguler, Tribun Utara">
+                        class="w-full px-3 py-2 border rounded-lg" value="<?= $nama_pertandingan ?>">
             </div>
             <div class="mb-4">
                 <label class="block text-gray-700 mb-2" for="price">Harga Tiket (Rp)</label>

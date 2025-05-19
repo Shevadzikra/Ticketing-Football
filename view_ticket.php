@@ -164,8 +164,8 @@ $qr_image = 'temp/qr_' . $order_id . '.png';
                         <!-- <button onclick="window.print()" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-6 rounded-md transition duration-300">
                             Cetak Tiket
                         </button> -->
-                        <a href="profile.php" class="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-6 rounded-md transition duration-300">
-                            Kembali ke Profil
+                        <a href="./" class="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-6 rounded-md transition duration-300">
+                            Kembali ke Beranda
                         </a>
                     </div>
                 </div>
